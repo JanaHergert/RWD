@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Wellogg’s Badezeit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="welloggs.css">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c31cb86864.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+  <header class="top-header">
+  <div class="logo">Wellogg’s</div>
+  <a href="#kontakt" class="header-button">Kontakt</a>
+  </header>
+
+ <section class="hero">
+  <div class="slider" id="slider">
+
+  <!-- Slide 1
+<div class="slide slide-1 active">
+  <img src="bilder/Hero_titelbild.jpg" alt="Titelbild">
+  <div class="slide-text">
+    <h1>So knusprig lecker war Wellness noch nie!</h1>
+    <p>Hochwertige, natürliche Badezusätze,<br>die nicht nur pflegen, sondern auch essbar sind.</p>
+  </div>
+</div>
+
+ Slide 2
+<div class="slide slide-2">
+  <img src="bilder/Hero_essbarerZusatz.jpg" alt="Essbare Badezusätze">
+  <div class="slide-text">
+    <h1>Essbare Badezusätze</h1>
+  </div>
+</div>
+
+Slide 3 
+<div class="slide slide-3">
+  <img src="bilder/kelloggs_berrylicious_hautpflege.jpg" alt="Natürliche Inhaltsstoffe">
+  <div class="slide-text">
+    <h1>Natürliche Inhaltsstoffe</h1>
+  </div>
+</div>
+
+Slide 4
+<div class="slide slide-4">
+  <img src="bilder/Hero_duefte.jpg" alt="Einzigartige Duftrichtungen">
+  <div class="slide-text">
+    <h1>Einzigartige Duftrichtungen</h1>
+  </div>
+</div> -->
+
+
+<!-- Slide 1 -->
+<div class="slide slide-1 active">
+  <img src="bilder/Hero_titelbild.jpg" alt="Titelbild">
+  <div class="slide-text center-text">
+    <h1>So knusprig lecker war Wellness noch nie!</h1>
+
+    <p class="desktop-only">Hochwertige, natürliche Badezusätze,<br>die nicht nur pflegen, sondern auch essbar sind.</p>
+  </div>
+</div>
+
+
+<!-- Slide 2 -->
+<div class="slide slide-2">
+  <img src="bilder/Hero_essbarerZusatz.jpg" alt="Essbare Badezusätze">
+  <div class="slide-text top-right-text white-text">
+    <h1>Essbare Badezusätze</h1>
+  </div>
+</div>
+
+<!-- Slide 3 -->
+<div class="slide slide-3">
+  <img src="bilder/kelloggs_berrylicious_hautpflege.jpg" alt="Natürliche Inhaltsstoffe">
+  <div class="slide-text top-right-text white-text">
+    <h1>Natürliche Inhaltsstoffe</h1>
+  </div>
+</div>
+
+<!-- Slide 4 -->
+<div class="slide slide-4">
+  <img src="bilder/Hero-Duefte.jpg" alt="Einzigartige Duftrichtungen">
+  <div class="slide-text top-right-text white-text">
+    <h1>Einzigartige Duftrichtungen</h1>
+  </div>
+</div>
+
+
+
+
+<!-- Navigation -->
+  <button class="slider-btn prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="slider-btn next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button>
+
+  <!-- Pagination-Dots -->
+<div class="pagination"></div>
+
+
+
+  </div>
+</section>
+
+
+<section class="produkt-uebersicht">
+  <h2>Neu: Deine Badezeit im Rhythmus der Natur</h2>
+  <div class="produktbilder">
+    <img src="bilder/bluetentraum.png" alt="Blütentraum">
+    <img src="bilder/tropicalcrunch.png" alt="Tropical Crunch">
+    <img src="bilder/berrylicious.png" alt="Berrylicious">
+    <img src="bilder/zimtzauber.png" alt="Zimtzauber">
+  </div>
+  <a href="#probierpaket" class="button">zum Probierpaket</a>
+</section>
+
+<!-- <section class="produkt-detail">
+  <img src="bilder/bluetentraum.png" alt="Blütentraum">
+  <div class="textblock">
+    <h3>Frühlingsedition<br><span>Blütentraum</span></h3>
+    <p>Badeflakes mit Honig & Wildblumen<br>Goldgelbe Wohlfühlmomente – ideal für sanfte Reinigung mit dem süßen Duft des Frühlings.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+  </div>
+</section>
+
+
+<section class="produkt-detail reverse">
+  <img src="bilder/tropicalcrunch.png" alt="Tropical Crunch">
+  <div class="textblock">
+    <h3>Sommeredition<br><span>Tropical Crunch</span></h3>
+    <p>Fruchtige Badebomben mit Ananas & Kokos<br>Feuchtigkeitsspendend & exotisch – ideal für trockene Haut.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+  </div>
+</section>
+
+<section class="produkt-detail">
+  <img src="bilder/berrylicious.png" alt="Berrylicious">
+  <div class="textblock">
+    <h3>Herbstedition<br><span>Berrylicious</span></h3>
+    <p>Fruchtige Beerenmischung mit Sandelholz<br>Hautberuhigend & fruchtig – ideal für gemütliche Herbsttage.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+  </div>
+</section>
+
+<section class="produkt-detail reverse">
+  <img src="bilder/zimtzauber.png" alt="Zimtzauber">
+  <div class="textblock">
+    <h3>Winteredition<br><span>Zimtzauber</span></h3>
+    <p>Pflegende Badekristalle mit Zimt & Vanille<br>Reichhaltige Pflege – ideal für beanspruchte Winterhaut.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+    <button id="tryBtn">Jetzt probieren</button> 
+  </div> -->
+
+<!-- Frühlingsedition – Text links -->
+<section class="produkt-banner fruehling">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <img src="bilder/bluetentraum.png" alt="Blütentraum Packung" class="produkt-packung">
+      <div class="textblock">
+        <h3>Frühlingsedition Blütentraum</h3>
+          <span class="title-desktop">Knusprige Badeflakes mit Honig & Wildblumen</span>
+          <span class="title-mobile">Honig & Wildblumen</span>
+        <p>Goldgelbe Wohlfühlmomente – ideal für sanfte Reinigung.</p>
+        <a href="#" class="buttonred">Jetzt probieren</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Sommeredition – Text rechts -->
+<section class="produkt-banner summer reverse">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <img src="bilder/tropicalcrunch.png" alt="Tropical Crunch Packung" class="produkt-packung">
+      <div class="textblock">
+        <h3>Sommeredition Tropical Crunch</h3>
+        <span class="title-desktop">Fruchtige Badebomben mit Ananas & Kokos</span>
+        <span class="title-mobile">Ananas & Kokos</span>
+          <p>Feuchtigkeitsspendend & exotisch – ideal für trockene Haut.</p>
+        <a href="#" class="buttonred">Jetzt probieren</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Herbstedition – Text links -->
+<section class="produkt-banner herbst">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <img src="bilder/berrylicious.png" alt="Berrylicious Packung" class="produkt-packung">
+      <div class="textblock">
+        <h3>Herbstedition Berrylicious</h3>
+        <span class="title-desktop">Fruchtige Beerenmischung mit Sandelholz</span>
+        <span class="title-mobile">Beeren & Sandelholz</span>
+         <p>Hautberuhigend & fruchtig – ideal für gemütliche Herbsttage.</p>
+        <a href="#" class="buttonred">Jetzt probieren</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Winteredition – Text rechts -->
+<section class="produkt-banner winter reverse">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <img src="bilder/zimtzauber.png" alt="Zimtzauber Packung" class="produkt-packung">
+      <div class="textblock">
+        <h3>Winteredition Zimtzauber</h3>
+        <span class="title-desktop">Pflegende Badekristalle mit Zimt & Vanille</span>
+        <span class="title-mobile">Zimt & Vanille</span>
+        <p>Reichhaltige Pflege – ideal für beanspruchte Winterhaut.</p>
+        <a href="#" class="buttonred">Jetzt probieren</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Pop-up -->
+<!-- <div id="popup" class="popup-hidden">
+  <div class="popup-content">
+    <span id="popupClose" class="popup-close">&times;</span>
+    <img src="quietscheente.svg" alt="Quietscheente" class="popup-duck" />
+    <h3>Bereit für dein entspannendes Müsli-Bad? 🍯🛁</h3>
+    <p>Gönn dir eine Auszeit – jetzt dein erstes Schaumbad-Experiment starten!</p>
+    <button class="popup-cta">Jetzt bestellen</button>
+  </div>
+</div> -->
+
+</section>
+
+
+
+</section>
+
+<!-- <div class="testimonial-slider">
+  <div class="testimonial-slide">
+    <div class="testimonial-content">
+      <img src="bild1.jpg" alt="Person 1" class="testimonial-img" />
+      <div class="testimonial-text">
+        <p class="quote">"Ich kann das 'Berrylicious' Bad nur empfehlen! 
+        Es fühlt sich an wie ein fruchtiger Urlaub – ein tolles Gefühl für Körper und Seele."</p>
+        <p class="author">– Lena F.</p>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-slide">
+    <div class="testimonial-content">
+      <img src="bild2.jpg" alt="Person 2" class="testimonial-img" />
+      <div class="testimonial-text">
+        <p class="quote">"Ich liebe das Design – ein echter Hingucker im Bad!"</p>
+        <p class="author">– Sophie, 32</p>
+      </div>
+    </div>
+  </div>
+  <div class="testimonial-slide">
+    <div class="testimonial-content">
+      <img src="bild3.jpg" alt="Person 3" class="testimonial-img" />
+      <div class="testimonial-text">
+        <p class="quote">"So riecht Entspannung für mich. Mega Produkt!"</p>
+        <p class="author">– Nina, 25</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+Navigation Buttons (optional)
+<div class="slider-buttons">
+  <button onclick="prevSlide()">‹</button>
+  <button onclick="nextSlide()">›</button>
+</div> -->
+
+
+
+<!-- <section class="testimonial">
+  <blockquote>
+    „Ich kann das 'Berrylicious'-Bad nur empfehlen! Es fühlt sich an wie ein fruchtiger Urlaub – ein tolles Gefühl für Körper und Seele.“
+  </blockquote>
+  <cite>– Lena F.</cite>
+</section> -->
+
+
+<section class="testimonial-slider">
+  <div class="testimonial-slide active">
+    <img src="bilder/testimonial1.jpg" alt="Lea H.." class="testimonial-img">
+    <blockquote>
+      „Ich bin jetzt offiziell eine Frucht. Meine Haut riecht wie ein Smoothie und ich liebe es.
+      Hat mein Badewasser rosa gefärbt und mein Leben kurzzeitig verbessert.“
+      <!-- „Ich kann das 'Berrylicious'-Bad nur empfehlen! Es fühlt sich an wie ein fruchtiger Urlaub – ein tolles Gefühl für Körper und Seele.“ -->
+    </blockquote>
+    <cite>– Lea H.</cite>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="bilder/testimonial_2.jpg" alt="Daniel K." class="testimonial-img">
+    <blockquote>
+      „Tropical Crunch hat mich echt überrascht – der Duft ist mega und meine Haut fühlt sich danach richtig gepflegt an.“
+    </blockquote>
+    <cite>–Daniel K.</cite>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="bilder/testimonial3.jpg" alt="Victoria T." class="testimonial-img">
+    <blockquote>
+      „Mein Badezimmer riecht nach Frühling und die Frühstücksflocken schmecken himmlisch. Muss man einfach ausprobieren!“
+    </blockquote>
+    <cite>– Victoria T.</cite>
+  </div>
+
+  <!-- Navigation -->
+  <button class="testimonial-btn prev">‹</button>
+  <button class="testimonial-btn next">›</button>
+</section>
+
+
+
+
+<div class="duck-wrapper" onclick="makeBubbles()">
+  <img src="bilder/KelloggsEnte.svg" alt="Quietscheente" class="duck-svg" />
+  <div class="bubble-container"></div>
+</div>
+
+
+
+
+
+<footer class="site-footer" onclick="makeBubbles()">
+  <div class="footer-column">
+    <nav>
+      <p>Unsere Produkte</p>
+      <p>Pflege</p>
+      <p>Wer wir sind</p>
+    </nav>
+  </div>
+  <div class="footer-column">
+    <nav>
+      <p>Impressum</p>
+      <p>Datenschutzerklärung</p>
+    </nav>
+  </div>
+  <div class="footer-column">
+    <nav>
+      <p>Seitenübersicht</p>
+      <p>Karriere</p>
+      <p>Cookie-Einstellungen</p>
+    </nav>
+  </div>
+</footer>
+
+
+<script src="slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,1042 @@
+/* Google Fonts importieren */
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nunito:wght@400;600&display=swap');
+
+
+/* Reset & Grundlayout */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #fffdfa;
+  color: #000;
+  line-height: 1.6;
+}
+
+
+/* ===== Top-Fester Header ===== */
+.top-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.top-header .logo {
+  font-family: 'Leckerli One', cursive;
+  font-size: 1.8rem;
+  color: #AE002F;
+}
+
+.header-button {
+  background: #AE002F;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* /* ===== Hero Slider ===== */
+.hero {
+  margin-top: 80px; /* Platz für festen Header */
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* === TEXT POSITIONEN & STIL === */
+
+/* Zentrierter Text (nur Slide 1) */
+.center-text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -95%);
+  text-align: center;
+  z-index: 2;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 90%;
+}
+
+/* Stil für Slide 1 */
+.center-text h1 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 2.2rem;
+  color: #000;
+}
+
+.center-text p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* Oben rechts platzierter Text (Slides 2–4) */
+.top-right-text {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 2;
+  max-width: 60%;
+  font-size: 1.6rem;
+}
+
+/* Weißer Text + Leckerli One für Slides 2–4 */
+.white-text h1,
+.white-text p {
+  color: #fff;
+  font-family: 'Leckerli One', cursive;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+/* === BILDSTIL === */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Bildausrichtung pro Slide */
+.slide-1 img {
+  object-position: 85% center;
+}
+
+.slide-2 img {
+  object-position: center 15%;
+}
+
+.slide-4 img {
+  object-position: center 50%;
+}
+
+
+/* === SLIDER-BUTTONS === */
+.slider-btn {
+  position: absolute;
+  margin: 2em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.slider-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.slider-btn.next {
+  right: 0;
+}
+
+/* === PAGINATION === */
+.pagination {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pagination-dot.active {
+  background: #000;
+}
+
+
+
+
+
+/* ===== Produktübersicht mit 4 Packungen ===== */
+
+/* .produkt-uebersicht {
+  text-align: center;
+  background: #AE002F;
+  color: white;
+  padding: 3rem 1rem;
+} */
+
+/*.produktbilder {
+   display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.produktbilder img {
+  width: 150px;
+  border-radius: 8px;
+} */
+
+/* Buttons */
+.button {
+  font-family: 'Leckerli One', cursive;
+  display: inline-block;
+  background: #fff;
+  color: #a0002f;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  /* font-size: 25px; */
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.button:hover {
+  background: #ffe5e5;
+}
+
+/* .buttonred {
+  font-family: 'Leckerli One', cursive;
+  display: inline-block;
+  background:#a0002f;
+  color:  #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+} */
+
+.buttonred:hover {
+  background: #ffe5e5;
+}
+
+
+
+.produktbilder img {
+  height: 200px;
+  width: auto;
+  border-radius: 8px;
+  object-fit: contain;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produktbilder {
+  display: flex;
+  gap: 12px; /* Abstand zwischen den Bildern */
+  justify-content: center;
+  flex-wrap: wrap; /* Für mobile Ansicht */
+  margin-bottom: 20px;
+}
+
+
+.produktbilder img:hover {
+  transform: scale(1.05); /* Vergrößerung */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Stärkerer Schatten */
+  z-index: 1;
+}
+
+
+/* ===== Einzelne Produktkarten ===== */
+/* .produkt-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  flex-wrap: wrap;
+  background: #fff8e1;
+}
+
+/* Bild normal */
+/* .produkt-detail img {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+/* Text daneben */
+/* .textblock {
+  max-width: 500px;
+  flex: 1;
+}
+
+.textblock h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.textblock span {
+  color: #a0002f;
+  font-size: 1.3rem;
+  display: block;
+}
+
+.textblock p {
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.textblock .button {
+  background: #a0002f;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}  */
+
+
+
+/* .produkt-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+  padding: 100px 20px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+} */
+
+
+/* große Bildschirme */
+
+/* Section bildschirmfüllend */
+.produkt-uebersicht {
+  height: 100vh;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  background: #AE002F;
+  color: white;
+}
+
+.produkt-uebersicht h2 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+/* Container für die Produkte */
+.produktliste {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Einzelnes Produkt-Element */
+.produkt {
+  flex: 1 1 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Einheitlich große Bilder */
+.produkt img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+
+
+.produkt-banner {
+  min-height: 100vh; /* Section mindestens Bildschirmhöhe */
+  padding: 40px; /* mehr Innenabstand */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+}
+
+.produkt-banner img.produkt-packung {
+  width: 250px; /* größer als vorher */
+  margin-bottom: 30px;
+}
+
+.produkt-banner .textblock h3 {
+  font-size: 2.5rem; /* größere Überschrift */
+  color: #ffff;
+}
+
+.produkt-banner .textblock span {
+  font-size: 1.8rem; /* größerer Text */
+  color: #ffff;
+}
+
+.produkt-banner .buttonred {
+  font-size: 1.8rem; /* größere Buttons */
+  padding: 1rem 2rem;
+}
+
+.produkt-banner.herbst {
+  background-image: url('bilder/beeren.jpg');
+  background-size: cover;
+  background-position: center 70%; /* <- das hier ändern */
+}
+
+
+
+
+
+
+
+
+
+.overlay-box {
+  background-color: #AE002F;
+  border-radius: 12px;
+  padding: 60px;
+  max-width: 1100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.overlay-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: nowrap;
+}
+
+.produkt-packung {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.textblock {
+  flex: 1;
+  text-align: center;
+}
+
+.textblock h3 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 38px;
+  text-align: center;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.textblock span {
+  font-family: 'Leckerli One', cursive;
+  display: block;
+  font-size: 30px;
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.textblock p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+
+.buttonred {
+  display: inline-block;
+  font-family: 'Leckerli One', cursive;
+  margin-top: 10px;
+  padding: 14px 30px;
+  font-size: 25px;
+  background-color: white;
+  color: #AE002F;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+/* Reihenfolge wechseln */
+.produkt-banner.reverse .overlay-content {
+  flex-direction: row-reverse;
+}
+
+/* RESPONSIVE */
+
+.title-desktop {
+  display: inline;
+}
+
+.title-mobile {
+  display: none;
+}
+
+ 
+
+/* Standard: nur Desktop zeigt Untertitel */
+.desktop-only {
+  display: none;
+}
+
+
+
+/* Hintergrundbilder */
+.produkt-banner.fruehling {
+  background-image: url('bilder/bg_bluetentraum.jpg');
+}
+
+.produkt-banner.summer {
+  background-image: url('bilder/bg_tropicalcrunch.jpg');
+}
+
+.produkt-banner.herbst {
+  background-image: url('bilder/bg_berrylicious.jpg');
+}
+
+.produkt-banner.winter {
+  background-image: url('bilder/bg_zimtzauber.jpg');
+}
+
+
+
+
+
+
+
+/* Pop-up Grund */
+/* #popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.popup-duck {
+  width: 60px;
+  margin-bottom: 12px;
+}
+
+.popup-cta {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #f7c331;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup-show { 
+  transform: translate(-50%, -50%) scale(1);
+} */
+
+
+
+
+/* ===== Responsives Verhalten ===== */
+
+.title-desktop {
+    display: inline !important;
+}
+
+.title-mobile {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+
+  .produkt-banner {
+    height: auto;
+    padding: 30px 20px;
+    background-attachment: scroll;
+  }
+
+  .title-desktop {
+    display: none !important;
+  }
+  
+  .title-mobile {
+    display: inline !important;
+  }
+
+  .overlay-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-direction: column !important;
+  }
+
+  .overlay-box {
+    padding: 10px;
+  }
+
+  .overlay-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .textblock h3 {
+    font-size: 26px;
+  }
+
+  .textblock span {
+    font-size: 22px;
+  }
+
+  .textblock p {
+    font-size: 16px;
+  }
+
+  .produkt-packung {
+    width: 180px;
+  }
+
+  .textblock {
+    text-align: center;
+  }
+
+  .produkt-packung {
+    width: 160px;
+    margin-bottom: 20px;
+  } 
+  
+  .image-wrapper,
+  .textblock {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Standard-Buttons (z. B. „Jetzt probieren“) */
+  /* .button {
+    display: inline-block;
+    margin: 1rem auto;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.4rem;
+    border-radius: 12px;
+    text-align: center;
+  } */
+
+  .slide-text {
+    /* top: 40%;
+    transform: translate(-50%, -50%);
+    max-width: 95%; */
+      top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .slide-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .slide-text p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .slider-btn {
+    display: none; /* Buttons nur in Desktop-Ansicht */
+  }
+
+  .slide-2 img {
+  object-position: 40% 40%; /* → weiter rechts (60%) und unten (40%) */
+}
+
+
+  /* Header-Button (z. B. „Kontakt“) – rechts und kompakter */
+  .header-button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-left: auto;
+    display: inline-block;
+  }
+
+  /* Header selbst bleibt horizontal angeordnet */
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+}
+
+
+
+
+
+@media (min-width: 769px) {
+
+  .desktop-only {
+    display: block;
+  }
+
+  .slide-1 img {
+    object-position: center 75%; /* zeigt unteren Bildausschnitt */
+  }
+
+  .testimonial-slide {
+    flex-direction: column;
+  }/* Responsive: Bild über Text auf Desktop */
+}
+
+
+
+/* Sticky-Effekt nur für große Bildschirme */
+@media (min-width: 1024px) {
+  .produkt-banner {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+    will-change: transform;
+  }
+
+  .produktbilder img {
+    height: 20rem;
+    width: auto;
+  }
+
+ .produkt-banner.fruehling { z-index: 1; }
+.produkt-banner.summer { z-index: 2; }
+.produkt-banner.herbst { z-index: 3; }
+.produkt-banner.winter { z-index: 4; }
+.site-footer {
+  position: relative;
+  z-index: 5;
+}
+}
+
+
+
+
+
+
+/* 
+.testimonial {
+  background: #fffbe6;
+  margin: 4rem auto 2rem;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  border-left: 5px solid #f3b300;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.testimonial blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.testimonial cite {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+} */
+
+.testimonial-slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.testimonial-slide {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.testimonial-slide.active {
+  display: flex;
+}
+
+
+.testimonial-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+
+cite {
+  font-family: 'Leckerli One', cursive;
+  color: #a0002f;
+}
+
+.testimonial-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  z-index: 2;
+}
+
+.testimonial-btn.prev {
+  left: 1rem;
+}
+
+.testimonial-btn.next {
+  right: 1rem;
+}
+
+
+
+
+
+/* 
+.testimonial {
+  background: #fffbe6;
+  margin: 4rem auto 2rem;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  border-left: 5px solid #f3b300;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.testimonial blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.testimonial cite {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #555;
+} */
+
+
+
+.duck-wrapper {
+  position: relative;
+  text-align: center;
+  margin-top: -50px; /* Optional: nach oben schieben, um über Footer zu sitzen */
+  z-index: 10;
+    cursor: pointer;
+}
+
+.duck-svg {
+  width: 100px;
+  height: auto;
+  margin-bottom: -30px; /* schiebt sie leicht in den Footer hinein */
+  animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+
+.bubble-container {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
+ 
+}
+
+/* .bubble {
+  position: absolute;
+  bottom: 0;
+  background: rgba(173, 216, 230, 0.6);
+  border-radius: 50%;
+  animation: rise 2s ease-out forwards;
+  opacity: 0.8;
+} */
+
+.bubble {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  animation: rise 2s ease-out forwards;
+  opacity: 0.8;
+  background: radial-gradient(circle at 30% 30%, 
+              rgba(255, 255, 255, 0.9), 
+              rgba(173, 216, 230, 0.6));
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.4);
+}
+
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300px) scale(0.7);
+    opacity: 0;
+  }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
+
+
+footer p {
+  cursor: pointer;
+}
+
+
+
+.site-footer {
+  background: #AE002F;
+  color: white;
+  font-family: 'Leckerli One', cursive;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.site-footer .footer-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.site-footer .footer-column h4 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+}
+
+.site-footer .footer-column nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.site-footer .footer-column nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.site-footer .footer-column nav a:hover {
+  opacity: 0.8;
+}
