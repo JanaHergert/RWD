@@ -7,6 +7,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -778,6 +779,13 @@ body {
     align-items: center;
     padding: 1rem;
   }
+
+   .testimonial-slider {
+    top: 0;
+    position: sticky;
+    padding: 4rem 4rem;
+    z-index: 10;
+  }
 }
 
 
@@ -797,6 +805,35 @@ body {
   .testimonial-slide {
     flex-direction: column;
   }/* Responsive: Bild über Text auf Desktop */
+
+    /* .produkt-banner.fruehling { z-index: 1; }
+  .produkt-banner.summer { z-index: 2; }
+  .produkt-banner.herbst { z-index: 3; }
+  .produkt-banner.winter { z-index: 1; } */
+
+   .produkt-banner.fruehling,
+  .produkt-banner.summer,
+  .produkt-banner.herbst, 
+  .produkt-banner.winter {
+ 
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+    will-change: transform;
+  } 
+
+  /* .produkt-banner.winter {
+    position: relative;
+    z-index: 1;
+    height: auto;
+  }  */
+
+  .testimonial-slider {
+    top: 0;
+    position: sticky;
+    padding: 4rem 1rem;
+    z-index: 10;
+  }
 }
 
 
@@ -843,35 +880,6 @@ body {
     width: auto;
   }
 
-  /* .produkt-banner.fruehling { z-index: 1; }
-  .produkt-banner.summer { z-index: 2; }
-  .produkt-banner.herbst { z-index: 3; }
-  .produkt-banner.winter { z-index: 1; } */
-
-   .produkt-banner.fruehling,
-  .produkt-banner.summer,
-  .produkt-banner.herbst, 
-  .produkt-banner.winter {
- 
-    top: 0;
-    height: 100vh;
-    z-index: 1;
-    will-change: transform;
-  } 
-
-  /* .produkt-banner.winter {
-    position: relative;
-    z-index: 1;
-    height: auto;
-  }  */
-
-  .testimonial-slider {
-    top: 0;
-    position: sticky;
-    padding: 4rem 1rem;
-    padding: 4rem 1rem;
-    z-index: 10;
-  }
 
   .testimonial-wrapper {
   background-color: white;
@@ -923,11 +931,10 @@ body {
 .testimonial-slider {
   position: relative;
   width: 100%;
-  max-width: 800px;
-  margin: 4rem auto;
   text-align: center;
-  padding: 2rem;
   overflow: hidden;
+  justify-items: center;
+  background-color: white;
 }
 
 .testimonial-slide {
@@ -935,6 +942,7 @@ body {
   flex-direction: column;
   align-items: center;
   transition: opacity 0.5s ease;
+  max-width: 800px;
 }
 
 .testimonial-slide.active {
@@ -1022,6 +1030,7 @@ cite {
   margin-top: -50px; /* Optional: nach oben schieben, um über Footer zu sitzen */
   z-index: 10;
     cursor: pointer;
+    background-color: white;
 }
 
 .duck-svg {
