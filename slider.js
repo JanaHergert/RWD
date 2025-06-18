@@ -81,6 +81,22 @@ window.addEventListener('click', (e) => {
 }); */
 
 
+//Vorteile Fade
+const vorteile = document.querySelectorAll('.vorteil');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, {
+  threshold: 0.5
+});
+
+vorteile.forEach(v => observer.observe(v));
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll('.testimonial-slide');
   const prevBtn = document.querySelector('.testimonial-btn.prev');
