@@ -1,11 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
+ //Hero-Slider
+  /* document.addEventListener("DOMContentLoaded", () => {
   const slides = document.querySelectorAll('.slide');
   const nextBtn = document.querySelector('.slider-btn.next');
   const prevBtn = document.querySelector('.slider-btn.prev');
   const pagination = document.querySelector('.pagination');
   let currentIndex = 0;
 
-  // Pagination erstellen
+  //Pagination 
   slides.forEach((_, index) => {
     const dot = document.createElement('div');
     dot.classList.add('pagination-dot');
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function updatePagination() {
     document.querySelectorAll('.pagination-dot').forEach(dot => dot.classList.remove('active'));
     pagination.children[currentIndex].classList.add('active');
-  }
+  } 
 
   function nextSlide() {
     const newIndex = (currentIndex + 1) % slides.length;
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   nextBtn.addEventListener('click', nextSlide);
   prevBtn.addEventListener('click', prevSlide);
 
-  // Touch
+  Touch
   let startX = 0;
   const slider = document.getElementById('slider');
 
@@ -54,8 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
     if (diff > 50) nextSlide();
     if (diff < -50) prevSlide();
   });
-});
+}); 
 
+
+
+*/
 /* JS zum Öffnen/Schließen
 const tryBtn = document.getElementById('tryBtn');
 const popup = document.getElementById('popup');

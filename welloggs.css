@@ -18,38 +18,32 @@ body {
 
 
 /* ===== Top-Fester Header ===== */
-.top-header {
+/* .top-header {
   position: fixed;
   top: 0;
   width: 100%;
   background: white;
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+}*/
 
-.top-header .logo {
-  font-family: 'Leckerli One', cursive;
-  font-size: 1.8rem;
-  color: #AE002F;
-}
-
-.header-button {
+/* .header-button {
   background: #AE002F;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-}
+} */
 
 
 /* /* ===== Hero Slider ===== */
-.hero {
-  margin-top: 80px; /* Platz für festen Header */
+/* .hero {
+  margin-top: 80px; 
 }
 
 .slider {
@@ -71,7 +65,7 @@ body {
 .slide.active {
   opacity: 1;
   position: relative;
-}
+} */
 
 /* === TEXT POSITIONEN & STIL === */
 
@@ -89,7 +83,7 @@ body {
 }
 
 /* Stil für Slide 1 */
-.center-text h1 {
+ .center-text h1 {
   font-family: 'Leckerli One', cursive;
   font-size: 2.2rem;
   color: #000;
@@ -99,17 +93,17 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 1.1rem;
   color: #000;
-}
+} 
 
 /* Oben rechts platzierter Text (Slides 2–4) */
-.top-right-text {
+/* .top-right-text {
   position: absolute;
   top: 1.5rem;
   right: 2rem;
   z-index: 2;
   max-width: 60%;
   font-size: 1.6rem;
-}
+} */
 
 /* Weißer Text + Leckerli One für Slides 2–4 */
 .white-text h1,
@@ -120,11 +114,30 @@ body {
 }
 
 
+.hero-static {
+  position: relative;
+  width: 100%;
+  height: 100vh;    
+  overflow: hidden;
+  
+}
+
+.hero-static .logo {
+ color: #AE002F; 
+ 
+}
 
 
+.hero-static img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;         /* Bild füllt Container und wird zugeschnitten */
+  object-position: center 75%; /* gleiche Bildposition wie im ersten Slide */
+  display: block;            /* entfernt kleine Abstände unter Bildern */
+}
 
 
-/* === BILDSTIL === */
+/* 
 .slide img {
   width: 100%;
   height: 100%;
@@ -132,7 +145,7 @@ body {
   object-position: center;
 }
 
-/* Bildausrichtung pro Slide */
+
 .slide-1 img {
   object-position: 85% center;
 }
@@ -143,7 +156,7 @@ body {
 
 .slide-4 img {
   object-position: center 50%;
-}
+} */
 
 
 /* === SLIDER-BUTTONS === */
@@ -177,7 +190,7 @@ body {
 }
 
 /* === PAGINATION === */
-.pagination {
+/* .pagination {
   position: absolute;
   bottom: 1.5rem;
   left: 50%;
@@ -198,7 +211,7 @@ body {
 
 .pagination-dot.active {
   background: #000;
-}
+} */
 
 
 
@@ -240,7 +253,6 @@ body {
   transition: background 0.3s ease;
   margin: 1rem auto;
   font-size: 1.5rem;
-  border-radius: 12px;
   text-align: center;
 }
 
@@ -437,9 +449,11 @@ body {
 }
 
 .produkt-banner .buttonred {
-  font-size: 1.8rem; /* größere Buttons */
-  padding: 1rem 2rem;
-}
+  font-size: 1.6rem; /* größere Buttons */
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+}  
+
 
 .produkt-banner.herbst {
   background-image: url('bilder/beeren.jpg');
@@ -707,29 +721,44 @@ body {
     /* top: 40%;
     transform: translate(-50%, -50%);
     max-width: 95%; */
-      top: 10%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     max-width: 90%;
+    position: absolute;
+    padding: 1rem;
+    z-index: 2;
+    background: none !;
+  
   }
 
-  .slide-text h1 {
+  /* .slide-text .logo {
+  font-family: 'Leckerli One', cursive;
+  font-size: 3rem;
+  color: #AE002F; 
+  } */
+
+   .slide-text h1 {
     font-size: 1.7rem;
   }
 
-  .slide-text p {
+ /* .slide-text p {
     font-size: 1.2rem;
     margin-top: 0.5rem;
   }
 
   .slider-btn {
-    display: none; /* Buttons nur in Desktop-Ansicht */
+    display: none; // Buttons nur in Desktop-Ansicht 
   }
 
   .slide-2 img {
-  object-position: 40% 40%; /* → weiter rechts (60%) und unten (40%) */
-}
+  object-position: 40% 40%; // → weiter rechts (60%) und unten (40%) 
+} */
+
+  .hero-static img {
+    object-position: 85% center;
+  }
 
 
   /* Header-Button (z. B. „Kontakt“) – rechts und kompakter */
@@ -760,9 +789,9 @@ body {
     display: block;
   }
 
-  .slide-1 img {
-    object-position: center 75%; /* zeigt unteren Bildausschnitt */
-  }
+  /* .slide-1 img {
+    object-position: center 75%; // zeigt unteren Bildausschnitt 
+  } */
 
   .testimonial-slide {
     flex-direction: column;
@@ -772,7 +801,7 @@ body {
 
 
 /* Sticky-Effekt nur für große Bildschirme */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .produkt-banner {
     position: sticky;
     top: 0;
@@ -786,15 +815,78 @@ body {
     width: auto;
   }
 
+
  .produkt-banner.fruehling { z-index: 1; }
 .produkt-banner.summer { z-index: 2; }
 .produkt-banner.herbst { z-index: 3; }
 .produkt-banner.winter { z-index: 4; }
+.testimonial-slider { z-index: 10;}
 .site-footer {
   position: relative;
-  z-index: 5;
+  z-index: auto;
+} 
+}*/
+
+@media (min-width: 1024px) {
+
+  .produkt-banner {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+    will-change: transform;
+  }
+
+  .produktbilder img {
+    height: 20rem;
+    width: auto;
+  }
+
+  /* .produkt-banner.fruehling { z-index: 1; }
+  .produkt-banner.summer { z-index: 2; }
+  .produkt-banner.herbst { z-index: 3; }
+  .produkt-banner.winter { z-index: 1; } */
+
+   .produkt-banner.fruehling,
+  .produkt-banner.summer,
+  .produkt-banner.herbst, 
+  .produkt-banner.winter {
+ 
+    top: 0;
+    height: 100vh;
+    z-index: 1;
+    will-change: transform;
+  } 
+
+  /* .produkt-banner.winter {
+    position: relative;
+    z-index: 1;
+    height: auto;
+  }  */
+
+  .testimonial-slider {
+    top: 0;
+    position: sticky;
+    padding: 4rem 1rem;
+    padding: 4rem 1rem;
+    z-index: 10;
+  }
+
+  .testimonial-wrapper {
+  background-color: white;
+  position: relative; /* oder static */
+  z-index: 0;
+  padding-top: 4rem; /* je nach Layout */
 }
+
+  .site-footer {
+    position: relative;
+    z-index: 3;
+  }
 }
+
+
+
 
 
 
@@ -868,7 +960,7 @@ blockquote {
 
 cite {
   font-family: 'Leckerli One', cursive;
-  color: #a0002f;
+  color: #AE002F;
 }
 
 .testimonial-btn {
