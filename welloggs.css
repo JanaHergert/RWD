@@ -72,7 +72,7 @@ body {
 /* Zentrierter Text (nur Slide 1) */
 .center-text {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -95%);
   text-align: center;
@@ -124,7 +124,8 @@ body {
 
 .hero-static .logo {
  color: #AE002F; 
- 
+ font-size: 2.8rem;
+ padding-bottom: 2rem;
 }
 
 
@@ -160,7 +161,7 @@ body {
 
 
 /* === SLIDER-BUTTONS === */
-.slider-btn {
+/* .slider-btn {
   position: absolute;
   margin: 2em;
   top: 50%;
@@ -187,7 +188,7 @@ body {
 
 .slider-btn.next {
   right: 0;
-}
+} */
 
 /* === PAGINATION === */
 /* .pagination {
