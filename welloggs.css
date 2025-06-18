@@ -503,6 +503,37 @@ body {
   margin-bottom: 30px;
 }
 
+
+.produkt-packung {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+  .bild-mit-schatten {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+.bild-mit-schatten::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 80%;
+  transform: translateX(-50%) scaleX(2.0);
+  width: 60%;
+  height: 200px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, transparent 80%);
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(6px);
+}
+
+
+
 .produkt-banner .textblock h3 {
   font-size: 2.5rem; /* größere Überschrift */
   color: #ffff;
@@ -543,6 +574,7 @@ body {
   max-width: 1100px;
   width: 100%;
   box-sizing: border-box;
+  overflow: visible;
 }
 
 
@@ -552,6 +584,7 @@ body {
   justify-content: space-between;
   gap: 50px;
   flex-wrap: nowrap;
+  overflow: visible;
 }
 
 .produkt-packung {
@@ -730,10 +763,26 @@ body {
 
   .produkt-banner {
     height: auto;
-    padding: 30px 20px;
+    padding: 4rem 1rem;
     background-attachment: scroll;
-    background-color: #AE002F;
+    top: 0;
+    min-height: 100vh;
+    z-index: 1;
+    will-change: transform;
+    position: sticky;
+    
   }
+
+  .produkt-banner .textblock h3 {
+  font-size: 2.0rem; /* größere Überschrift */
+  color: #ffff;
+  }
+
+.produkt-banner .overlay-box {
+  background: transparent;
+}
+
+
 
 .produkt-banner.herbst,
 .produkt-banner.winter,
@@ -743,26 +792,43 @@ body {
   background-color: white;
 }
 
+.produkt-banner.fruehling {
+  background-color: #78A14C; /* Beispiel Frühlingsfarbe */
+}
+
+.produkt-banner.summer {
+  background-color: #D4971D;
+}
+
+.produkt-banner.herbst {
+  background-color: #920c0a;
+}
+
+.produkt-banner.winter {
+  background-color: #608187;
+}
+
+
 
 /* Herbst-Farbe */
-.produkt-banner.herbst .overlay-box {
+/* .produkt-banner.herbst .overlay-box {
   background-color: #920c0a; 
-}
+} */
 
 /* Winter-Farbe */
-.produkt-banner.winter .overlay-box {
+/* .produkt-banner.winter .overlay-box {
   background-color: #608187; 
-}
+} */
 
 /* Frühling */
-.produkt-banner.fruehling .overlay-box {
+/* .produkt-banner.fruehling .overlay-box {
   background-color: #78A14C; 
-}
+} */
 
 /* Sommer */
-.produkt-banner.summer .overlay-box {
+/* .produkt-banner.summer .overlay-box {
   background-color: #D4971D; 
-}
+} */
 
   .title-desktop {
     display: none !important;
@@ -798,7 +864,10 @@ body {
   .produkt-packung {
     width: 100dvh;  
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
   }
+
 
   .textblock {
     text-align: center;
@@ -867,18 +936,6 @@ body {
     padding: 1rem;
   } */
 
-  .produkt-banner {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    z-index: 1;
-    will-change: transform;
-  }
-
-  .produkt-banner .textblock h3 {
-  font-size: 2.0rem; /* größere Überschrift */
-  color: #ffff;
-}
 
    .testimonial-slider {
     top: 0;
