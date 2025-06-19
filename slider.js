@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   function openModal(id) {
-    document.getElementById(id).style.display = 'block';
+    document.getElementById(id).style.display = 'flex';
   }
 
   function closeModal(id) {
