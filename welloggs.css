@@ -984,6 +984,12 @@ body {
   background-color: #D4971D; 
 }
 
+.site-footer {
+    position: relative;
+    z-index: 3;
+  }
+  
+
   
 
   .testimonial-slide {
