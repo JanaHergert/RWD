@@ -892,10 +892,7 @@ body {
   object-position: 40% 40%; // → weiter rechts (60%) und unten (40%) 
 } */
 
-  .hero-static img {
-    object-position: 85% center;
-  }
-
+ 
 
   /* Header-Button (z. B. „Kontakt“) – rechts und kompakter */
   /* .header-button {
@@ -938,7 +935,22 @@ body {
 }
 
 
+@media (max-width: 600px) {
+   .hero-static img {
+    object-position: 85% center;
+  }
 
+  .produkt-uebersicht, .vorteile-section, .produkt-banner, .overlay-box,.overlay-content{
+    padding: unset;
+  }
+  .produkt-uebersicht{
+    height: unset;
+    padding-top: 2em;
+  }
+  .title-mobile, .title-mobile ~ p{
+    margin: unset;
+  }
+}
 
 
 @media (min-width: 769px) {
