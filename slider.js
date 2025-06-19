@@ -138,6 +138,48 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+  function openModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+   // Schließen beim Klick außerhalb des Inhalts
+  window.addEventListener('click', function(e) {
+    document.querySelectorAll('.custom-modal').forEach(modal => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  });
+
+
+document.getElementById('orderForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const name = document.getElementById('name').value.trim();
+  const plz = document.getElementById('plz').value.trim();
+  const address = document.getElementById('address').value.trim();
+  const message = document.getElementById('formMessage');
+
+  if (!name || !plz || !address) {
+    message.textContent = 'Bitte alle Felder ausfüllen!';
+  } else {
+    message.textContent = 'Vielen Dank für die Bestellung!';
+    
+    setTimeout(() => {
+      closeModal('orderModal');
+      document.getElementById('orderForm').reset();
+      message.textContent = '';
+    }, 2000);
+  }
+});
+
+
+
+
 
 
 

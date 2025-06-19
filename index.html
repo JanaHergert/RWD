@@ -110,7 +110,7 @@ Slide 4
     <img src="bilder/zimtzauber.png" alt="Zimtzauber">
   </div>
 
-  <a class="button">zum Probierpaket</a>
+  <a class="button"onclick="openModal('modal-vorschau')">zum Probierpaket</a>
 
 </section>
 
@@ -164,7 +164,7 @@ Slide 4
           <span class="title-desktop">Knusprige Badeflakes mit Honig & Wildblumen</span>
           <span class="title-mobile">Honig & Wildblumen</span>
         <p>Goldgelbe Wohlfühlmomente – ideal für sanfte Reinigung.</p>
-        <a class="buttonred">Jetzt probieren</a>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
       </div>
     </div>
   </div>
@@ -185,7 +185,7 @@ Slide 4
         <span class="title-desktop">Fruchtige Badebomben mit Ananas & Kokos</span>
         <span class="title-mobile">Ananas & Kokos</span>
           <p>Feuchtigkeitsspendend & exotisch – ideal für trockene Haut.</p>
-        <a class="buttonred">Jetzt probieren</a>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
       </div>
     </div>
   </div>
@@ -205,7 +205,7 @@ Slide 4
         <span class="title-desktop">Fruchtige Beerenmischung mit Sandelholz</span>
         <span class="title-mobile">Beeren & Sandelholz</span>
          <p>Hautberuhigend & fruchtig – ideal für gemütliche Herbsttage.</p>
-        <a class="buttonred">Jetzt probieren</a>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
       </div>
     </div>
   </div>
@@ -225,7 +225,7 @@ Slide 4
         <span class="title-desktop">Pflegende Badekristalle mit Zimt & Vanille</span>
         <span class="title-mobile">Zimt & Vanille</span>
         <p>Reichhaltige Pflege – ideal für beanspruchte Winterhaut.</p>
-        <a class="buttonred">Jetzt probieren</a>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
       </div>
     </div>
   </div>
@@ -364,6 +364,31 @@ Navigation Buttons (optional)
     </nav>
   </div>
 </footer>
+
+<div id="modal-vorschau" class="custom-modal">
+  <span class="close-modal" onclick="closeModal('modal-vorschau', 'orderModal')">&times;</span>
+   <p class="modal-caption">Diese sanfte Auszeit erwartet dich …</p>
+  <img src="bilder/vorschau.jpg" alt="Produktvorschau" class="modal-image desktop-only">
+  <img src="bilder/vorschaumobile.jpg" alt="Produktvorschau" class="modal-image mobile-only">
+</div>
+
+
+<!-- Bestellformular-Pop-up -->
+<div class="custom-modal" id="orderModal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal('orderModal')">&times;</span>
+    <h2 class="modal-caption">Bestellformular</h2>
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Name">
+      <input type="number" id="plz" placeholder="Postleitzahl">
+      <input type="text" id="address" placeholder="Adresse">
+      <input type="email" id="email" placeholder="E-Mail">
+      <button type="submit">Absenden</button>
+    </form>
+    <p id="formMessage" class="form-message"></p>
+  </div>
+</div>
+
 
 
 <script src="slider.js"></script>
