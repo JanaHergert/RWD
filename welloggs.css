@@ -522,7 +522,7 @@ body {
   position: absolute;
   bottom: 0px;
   left: 80%;
-  transform: translateX(-50%) scaleX(2.0);
+  transform: translateX(-50%) scaleX(1.5);
   width: 60%;
   height: 200px;
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, transparent 80%);
@@ -808,28 +808,6 @@ body {
   background-color: #608187;
 }
 
-
-
-/* Herbst-Farbe */
-/* .produkt-banner.herbst .overlay-box {
-  background-color: #920c0a; 
-} */
-
-/* Winter-Farbe */
-/* .produkt-banner.winter .overlay-box {
-  background-color: #608187; 
-} */
-
-/* Frühling */
-/* .produkt-banner.fruehling .overlay-box {
-  background-color: #78A14C; 
-} */
-
-/* Sommer */
-/* .produkt-banner.summer .overlay-box {
-  background-color: #D4971D; 
-} */
-
   .title-desktop {
     display: none !important;
   }
@@ -972,6 +950,27 @@ body {
   /* .slide-1 img {
     object-position: center 75%; // zeigt unteren Bildausschnitt 
   } */
+
+
+  /* Herbst-Farbe */
+.produkt-banner.herbst .overlay-box {
+  background-color: #920c0a; 
+}
+
+/* Winter-Farbe */
+.produkt-banner.winter .overlay-box {
+  background-color: #608187; 
+}
+
+/* Frühling */
+.produkt-banner.fruehling .overlay-box {
+  background-color: #78A14C; 
+}
+
+/* Sommer */
+.produkt-banner.summer .overlay-box {
+  background-color: #D4971D; 
+}
 
   
 
