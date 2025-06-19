@@ -951,6 +951,18 @@ body {
     object-position: center 75%; // zeigt unteren Bildausschnitt 
   } */
 
+    .produkt-banner {
+    height: auto;
+    padding: 4rem 1rem;
+    background-attachment: scroll;
+    top: 0;
+    min-height: 100vh;
+    z-index: 1;
+    will-change: transform;
+    position: sticky;
+    
+  }
+
 
   /* Herbst-Farbe */
 .produkt-banner.herbst .overlay-box {
