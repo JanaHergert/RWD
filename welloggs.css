@@ -1164,9 +1164,11 @@ img.produkt-packung {
 }
 .duck-wrapper{
   z-index: 999 !important;
+  position: sticky;
 }
 
   .site-footer {
+    position: sticky;
     position: relative;
     z-index: 100;
   }
