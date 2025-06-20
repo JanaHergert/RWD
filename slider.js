@@ -247,12 +247,10 @@ footerParagraphs.forEach(p => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  // 👇 bestehender Slider-Code
-  const slides = document.querySelectorAll('.testimonial-slide');
-  // ... dein restlicher Code ...
+/* document.addEventListener("DOMContentLoaded", () => {
 
-  // 👇 Parallax nur hier ergänzen:
+  const slides = document.querySelectorAll('.testimonial-slide');
+
   const image = document.getElementsByClassName('parallax-img');
   if (image.length > 0) {
     new simpleParallax(image, {
@@ -261,5 +259,5 @@ document.addEventListener("DOMContentLoaded", () => {
       transition: 'cubic-bezier(0,0,0,1)'
     });
   }
-});
+}); */
 

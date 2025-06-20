@@ -1386,7 +1386,7 @@ cite {
 .duck-svg {
   width: 6rem;
   height: auto;
-  margin-bottom: -30px; /* schiebt sie leicht in den Footer hinein */
+  margin-bottom: -2rem; /* schiebt sie leicht in den Footer hinein */
   animation: float 3s ease-in-out infinite;
 }
 
