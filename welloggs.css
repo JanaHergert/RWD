@@ -895,6 +895,10 @@ body {
 
 @media (max-width: 768px) {
 
+  .hero-static img {
+    object-position: 70% center;
+  }
+
     .vorteil i {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -1112,7 +1116,7 @@ img.produkt-packung {
 @media (min-width: 769px) {
 
  .hero-static img {
-    object-position: 85% center;
+    object-position: 75% center;
   }
 
     .produkt-banner {
@@ -1230,6 +1234,10 @@ img.produkt-packung {
   .produktbilder img {
     height: 20rem;
     width: auto;
+  }
+
+  .hero-static img {
+    object-position: center 75%;
   }
 
 
