@@ -380,10 +380,10 @@ Navigation Buttons (optional)
     <span class="close-modal" onclick="closeModal('orderModal')">&times;</span>
     <h2 class="modal-caption">Bestellformular</h2>
     <form id="orderForm">
-      <input type="text" id="name" placeholder="Name">
-      <input type="number" id="plz" placeholder="Postleitzahl">
-      <input type="text" id="address" placeholder="Adresse">
-      <input type="email" id="email" placeholder="E-Mail">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="number" id="plz" placeholder="Postleitzahl" required>
+      <input type="text" id="address" placeholder="Adresse" required>
+      <input type="email" id="email" placeholder="E-Mail" required>
       <button type="submit">Absenden</button>
     </form>
     <p id="formMessage" class="form-message"></p>

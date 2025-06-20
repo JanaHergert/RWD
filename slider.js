@@ -164,10 +164,10 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
   const address = document.getElementById('address').value.trim();
   const message = document.getElementById('formMessage');
 
-  if (!name || !plz || !address) {
-    message.textContent = 'Bitte alle Felder ausfüllen!';
-  } else {
+  if (name && plz && address) {
     message.textContent = 'Vielen Dank für die Bestellung!';
+  }
+    
     
     setTimeout(() => {
       closeModal('orderModal');
@@ -175,7 +175,7 @@ document.getElementById('orderForm').addEventListener('submit', function(e) {
       message.textContent = '';
     }, 2000);
   }
-});
+);
 
 
 
