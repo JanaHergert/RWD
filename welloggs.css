@@ -878,6 +878,19 @@ body {
     display: none;
     padding: 2rem;
   }
+
+  #orderForm button, .modal-content, .modal-caption {
+    font-size: 1rem;
+  }
+
+  #orderForm input {
+    font-size: 0.7rem;
+  }
+
+
+.modal-caption, .close-modal {
+  color: #AE002F;
+}  
 }
 
 @media (max-width: 768px) {
@@ -918,7 +931,7 @@ body {
   background-image: none;
   background-color: white;
   padding-top: 2rem;
-  padding-bottom: 6rem;
+  padding-bottom: 20rem;
   max-height: 100%;
 }
 
@@ -953,7 +966,6 @@ img.produkt-packung {
   }
 
   .overlay-content {
-    flex-direction: column;
     align-items: center;
     text-align: center;
     flex-direction: column !important;
