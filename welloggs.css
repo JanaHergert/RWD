@@ -1111,6 +1111,10 @@ img.produkt-packung {
 
 @media (min-width: 769px) {
 
+ .hero-static img {
+    object-position: 85% center;
+  }
+
     .produkt-banner {
     height: auto;
     padding: 4rem 1rem;
