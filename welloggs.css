@@ -281,6 +281,9 @@ body {
 } */
 
 /* Buttons */
+button{
+    cursor: pointer; 
+}
 .button {
   font-family: 'Leckerli One', cursive;
   display: inline-block;
@@ -295,6 +298,8 @@ body {
   margin: 1rem auto;
   font-size: 1.5rem;
   text-align: center;
+  cursor: pointer; 
+
 }
 
 .button:hover {
@@ -1051,6 +1056,14 @@ img.produkt-packung {
     object-position: 85% center;
   }
 
+   .hero-static .dog {
+    object-position: 20% center;
+  }
+
+  .dog ~ .slide-text {
+  top: 0;
+  }
+
   .produkt-uebersicht, .vorteile-section, .produkt-banner, .overlay-box,.overlay-content{
     padding: unset;
   }
@@ -1113,11 +1126,16 @@ img.produkt-packung {
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
  .hero-static img {
     object-position: 75% 65%;
   }
+
+ .hero-static .dog {
+    object-position: 40% center;
+  }
+ 
 
     .produkt-banner {
     height: auto;
@@ -1239,6 +1257,10 @@ img.produkt-packung {
 
   .hero-static img {
     object-position: center 75%;
+  }
+
+  .hero-static .dog {
+    object-position: center 45%;
   }
 
 
