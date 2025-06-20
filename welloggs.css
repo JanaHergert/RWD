@@ -801,6 +801,39 @@ button{
 }
 
 
+.produkt-banner.fruehling.doggo {
+  background-image: url('bilder/bg_wiesenwuff.jpg');
+}
+
+.produkt-banner.summer.doggo {
+  background-image: url('bilder/bg_grill&chill.jpg');
+}
+
+.produkt-banner.herbst.doggo {
+  background-image: url('bilder/bg_waldbeute.jpg');
+}
+
+.produkt-banner.winter.doggo {
+  background-image: url('bilder/bg_keksundknuddel.jpg');
+}
+
+
+
+.produkt-banner.fruehling.baby {
+  background-image: url('bilder/bg_bluetenbubbels.jpg');
+}
+
+.produkt-banner.summer.baby {
+  background-image: url('bilder/bg_melonen.jpg');
+}
+
+.produkt-banner.herbst.baby {
+  background-image: url('bilder/bg_kuschelkuerbis.jpg');
+}
+
+.produkt-banner.winter.baby {
+  background-image: url('bilder/bg_sternchensprudel.jpg');
+}
 
 
 
