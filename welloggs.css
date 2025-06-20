@@ -1163,7 +1163,7 @@ img.produkt-packung {
   padding-top: 4rem; /* je nach Layout */
 }
 .duck-wrapper{
-  z-index: 99;
+  z-index: 999 !important;
 }
 
   .site-footer {
