@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Bubblogg’s Badezeit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="welloggs.css">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c31cb86864.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="bilder/BubbloggsEnten.svg" type="image/svg+xml">
+
+</head>
+
+
+<body>
+  <!-- <section class="top-header">
+  <div class="logo">
+    <h1>Wellogg’s</h1>
+  </div>
+  </section> -->
+
+ <!-- <section class="hero">
+  <div class="slider" id="slider"> -->
+
+    
+
+<section class="hero-static">
+  <img src="bilder/HeroBaby.png" alt="Hero Titelbild">
+   <div class="slide-text center-text">
+     <h1 class="logo">Bubblogg’s</h1>
+    <h1>Große Pflege für kleine Wunder!</h1>
+    <p class="desktop-only">Natürliche Badezusätze <br>zum Plantschen, Pflegen & Probieren.</p>
+  </div>
+  <h1 class="logo">Bubblogg’s</h1>
+</section>
+
+
+
+
+  </div>
+</section>
+
+
+<section class="produkt-uebersicht">
+      <div class="vorteile-section">
+  <div class="vorteil">
+    <i class="fas fa-cookie-bite"></i>
+    <p>Essbare Pflege</p>
+  </div>
+  <div class="vorteil">
+    <i class="fas fa-seedling"></i>
+    <p>Natürliche Inhaltsstoffe</p>
+  </div>
+  <div class="vorteil">
+    <i class="fa-solid fa-earth-americas"></i>
+    <p>Umweltfreundliche Herstellung</p>
+  </div>
+</div>
+
+  <h2>Neu: Badezeit im Rhythmus der Natur</h2>
+  <div class="produktbilder">
+    <img src="bilder/bluetentraum.png" alt="Blütentraum">
+    <img src="bilder/tropicalcrunch.png" alt="Tropical Crunch">
+    <img src="bilder/berrylicious.png" alt="Berrylicious">
+    <img src="bilder/zimtzauber.png" alt="Zimtzauber">
+  </div>
+
+  <a class="button"onclick="openModal('modal-vorschau')">zum Probierpaket</a>
+
+</section>
+
+<!-- <section class="produkt-detail">
+  <img src="bilder/bluetentraum.png" alt="Blütentraum">
+  <div class="textblock">
+    <h3>Frühlingsedition<br><span>Blütentraum</span></h3>
+    <p>Badeflakes mit Honig & Wildblumen<br>Goldgelbe Wohlfühlmomente – ideal für sanfte Reinigung mit dem süßen Duft des Frühlings.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+  </div>
+</section>
+
+
+<section class="produkt-detail reverse">
+  <img src="bilder/tropicalcrunch.png" alt="Tropical Crunch">
+  <div class="textblock">
+    <h3>Sommeredition<br><span>Tropical Crunch</span></h3>
+    <p>Fruchtige Badebomben mit Ananas & Kokos<br>Feuchtigkeitsspendend & exotisch – ideal für trockene Haut.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+  </div>
+</section>
+
+<section class="produkt-detail">
+  <img src="bilder/berrylicious.png" alt="Berrylicious">
+  <div class="textblock">
+    <h3>Herbstedition<br><span>Berrylicious</span></h3>
+    <p>Fruchtige Beerenmischung mit Sandelholz<br>Hautberuhigend & fruchtig – ideal für gemütliche Herbsttage.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+  </div>
+</section>
+
+<section class="produkt-detail reverse">
+  <img src="bilder/zimtzauber.png" alt="Zimtzauber">
+  <div class="textblock">
+    <h3>Winteredition<br><span>Zimtzauber</span></h3>
+    <p>Pflegende Badekristalle mit Zimt & Vanille<br>Reichhaltige Pflege – ideal für beanspruchte Winterhaut.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+    <button id="tryBtn">Jetzt probieren</button> 
+  </div> -->
+
+<!-- Frühlingsedition – Text links -->
+<section class="produkt-banner fruehling ">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <h3  class="title-mobile">Frühlingsedition</h3>
+      <div class="bild-mit-schatten">
+      <img src="bilder/bluetentraum.png" alt="Blütenbubbels Packung" class="produkt-packung">
+    </div>
+      <div class="textblock">
+        <h3  class="desktop-only">Frühlingsedition Blütenbubbels</h3>
+          <span class="title-desktop">Schaumige Badeblüten mit Kamille, Mandelöl & Gänseblümchen-Extrakt</span>
+          <span class="title-mobile">Kamille, Mandelöl & Gänseblümchen-Extrakt</span>
+        <p>Beruhigend & sanft pflegend – für erste große Entdeckungsbäder.</p>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Sommeredition – Text rechts -->
+<section class="produkt-banner summer reverse ">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <h3  class="title-mobile">Sommeredition</h3>
+      <div class="bild-mit-schatten">
+        <img src="bilder/tropicalcrunch.png" alt="Melonenplatschis Packung" class="produkt-packung">
+      </div>
+      <div class="textblock">
+        <h3  class="desktop-only">Sommeredition Melonenplatschis</h3>
+        <span class="title-desktop">Bunte Badebällchen mit Wassermelone, Bio-Aloe Vera & Reiskeimöl</span>
+        <span class="title-mobile">Wassermelone, Bio-Aloe Vera & Reiskeimöl</span>
+          <p>Feuchtigkeitsspendend & kühlend – optimale Linderung bei Sommerhitze.</p>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Herbstedition – Text links -->
+<section class="produkt-banner herbst ">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <h3  class="title-mobile">Herbstedition</h3>
+      <div class="bild-mit-schatten">
+         <img src="bilder/berrylicious.png" alt="Kuschelkürbis Packung" class="produkt-packung">
+      </div>
+      <div class="textblock">
+        <h3  class="desktop-only">Herbstedition Kuschelkürbis</h3>
+        <span class="title-desktop">Leckere Badewürfel mit Hafermilch, Kürbiskernöl & Vanille</span>
+        <span class="title-mobile">Hafermilch, Kürbiskernöl & Vanille</span>
+         <p>Rückfettend & beruhigend – kuschelig warme Pflege.</p>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Winteredition – Text rechts -->
+<section class="produkt-banner winter reverse">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <h3  class="title-mobile">Winteredition</h3>
+      <div class="bild-mit-schatten">
+        <img src="bilder/zimtzauber.png" alt="Sternschensprudel Packung" class="produkt-packung">
+      </div>
+      <div class="textblock">
+        <h3 class="desktop-only">Winteredition Sternschensprudel</h3>
+        <span class="title-desktop">Sternförmige Badeperlen mit Bio-Zimt, Mandelmilch & Shea-Butter</span>
+        <span class="title-mobile">Bio-Zimt, Mandelmilch & Shea-Butter</span>
+        <p>Wärmend & kuschelweich – Sternenbäder für kleine Frostnäschen.</p>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Pop-up -->
+<!-- <div id="popup" class="popup-hidden">
+  <div class="popup-content">
+    <span id="popupClose" class="popup-close">&times;</span>
+    <img src="quietscheente.svg" alt="Quietscheente" class="popup-duck" />
+    <h3>Bereit für dein entspannendes Müsli-Bad? 🍯🛁</h3>
+    <p>Gönn dir eine Auszeit – jetzt dein erstes Schaumbad-Experiment starten!</p>
+    <button class="popup-cta">Jetzt bestellen</button>
+  </div>
+</div> -->
+
+</section>
+
+
+
+</section>
+
+
+<section class="testimonial-slider">
+  <div class="testimonial-slide active">
+    <img src="bilder/BluetenbubbelsRezension.jpg" alt="Diana W." class="testimonial-img">
+    <blockquote>
+      „So süße Produkte. Wir werden alle nacheinander ausprobieren. Unsere Kleine liebt die Blütenbubbels!“
+    </blockquote>
+    <cite>– Diana W.</cite>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="bilder/MelonenplatschisRezension.jpg" alt="Hanna M." class="testimonial-img">
+    <blockquote>
+      „Am liebsten würde ich die Badezusätze selber verwenden. Unser Kind liebt sie, vor allem, weil der Schaum so hübsch bunt wird.“
+    </blockquote>
+    <cite>– Hanna M.</cite>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="bilder/HerbstRezension.png" alt="Ralf A." class="testimonial-img">
+    <blockquote>
+      „Mein Sohn fand den kleinen Kürbis total toll und hat die ganze Zeit an ihm geknabbert. Ein Glück, dass er essbar ist!“
+    </blockquote>
+    <cite>– Ralf A.</cite>
+  </div>
+
+  <!-- Navigation -->
+  <button class="testimonial-btn prev">‹</button>
+  <button class="testimonial-btn next">›</button>
+</section>
+
+
+
+
+<div class="duck-wrapper" onclick="makeBubbles()">
+  <img src="bilder/BubbloggsEnten.svg" alt="Quietscheente" class="duck-svg" />
+  <div class="bubble-container"></div>
+</div>
+
+
+
+
+
+<footer class="site-footer" onclick="makeBubbles()">
+  <div class="footer-column">
+    <nav>
+      <p>Unsere Produkte</p>
+      <p>Pflege</p>
+      <p>Wer wir sind</p>
+    </nav>
+  </div>
+  <div class="footer-column">
+    <nav>
+      <p>Impressum</p>
+      <p>Datenschutzerklärung</p>
+    </nav>
+  </div>
+  <div class="footer-column">
+    <nav>
+      <p>Seitenübersicht</p>
+      <p>Karriere</p>
+      <p>Cookie-Einstellungen</p>
+    </nav>
+  </div>
+</footer>
+
+<div id="modal-vorschau" class="custom-modal">
+  <span class="close-modal" onclick="closeModal('modal-vorschau')">&times;</span>
+   <p class="modal-caption">Diese sanfte Auszeit erwartet dich …</p>
+  <img src="bilder/vorschau.jpg" alt="Produktvorschau" class="modal-image desktop-only">
+  <img src="bilder/vorschaumobile.jpg" alt="Produktvorschau" class="modal-image mobile-only">
+</div>
+
+
+<!-- Bestellformular-Pop-up -->
+<div class="custom-modal" id="orderModal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal('orderModal')">&times;</span>
+    <h2 class="modal-caption">Bestellformular</h2>
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="number" id="plz" placeholder="Postleitzahl" required>
+      <input type="text" id="address" placeholder="Adresse" required>
+      <input type="email" id="email" placeholder="E-Mail" required>
+      <button type="submit">Bestellen</button>
+    </form>
+    <p id="formMessage" class="form-message"></p>
+  </div>
+</div>
+
+
+
+<script src="slider.js"></script>
+</body>
+</html>

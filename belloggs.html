@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Bellogg’s Badezeit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="welloggs.css">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c31cb86864.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="bilder/BelloggsHund.svg" type="image/svg+xml">
+
+</head>
+
+
+<body>
+  <!-- <section class="top-header">
+  <div class="logo">
+    <h1>Wellogg’s</h1>
+  </div>
+  </section> -->
+
+ <!-- <section class="hero">
+  <div class="slider" id="slider"> -->
+
+    
+
+<section class="hero-static">
+  <img src="bilder/HeroHund.jpg" alt="Hero Titelbild">
+   <div class="slide-text center-text">
+     <h1 class="logo">Bellogg’s</h1>
+    <h1>So lecker kann Hundewellness sein!</h1>
+    <p class="desktop-only">Natürliche Badezusätze <br>für weiches Fell und zufriedenen.</p>
+  </div>
+  <h1 class="logo">Bellogg’s</h1>
+</section>
+
+
+<!-- Slide 1 -->
+<!-- <div class="slide slide-1 active">
+  <img src="bilder/Hero_titelbild.jpg" alt="Titelbild">
+  <div class="slide-text center-text">
+    <h1>So knusprig lecker war Wellness noch nie!</h1>
+
+    <p class="desktop-only">Hochwertige, natürliche Badezusätze,<br>die nicht nur pflegen, sondern auch essbar sind.</p>
+  </div>
+</div> -->
+
+
+<!-- Slide 2 
+<div class="slide slide-2">
+  <img src="bilder/Hero_essbarerZusatz.jpg" alt="Essbare Badezusätze">
+  <div class="slide-text top-right-text white-text">
+    <h1>Essbare Badezusätze</h1>
+  </div>
+</div>
+
+ Slide 3
+<div class="slide slide-3">
+  <img src="bilder/kelloggs_berrylicious_hautpflege.jpg" alt="Natürliche Inhaltsstoffe">
+  <div class="slide-text top-right-text white-text">
+    <h1>Natürliche Inhaltsstoffe</h1>
+  </div>
+</div>
+
+Slide 4 
+<div class="slide slide-4">
+  <img src="bilder/Hero-Duefte.jpg" alt="Einzigartige Duftrichtungen">
+  <div class="slide-text top-right-text white-text">
+    <h1>Einzigartige Duftrichtungen</h1>
+  </div>
+</div> -->
+
+
+
+
+<!-- Navigation -->
+  <!-- <button class="slider-btn prev" onclick="prevSlide()"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="slider-btn next" onclick="nextSlide()"><i class="fa-solid fa-chevron-right"></i></button> -->
+
+  <!-- Pagination-Dots -->
+<!-- <div class="pagination"></div> -->
+
+
+
+  </div>
+</section>
+
+
+<section class="produkt-uebersicht">
+      <div class="vorteile-section">
+  <div class="vorteil">
+    <i class="fas fa-cookie-bite"></i>
+    <p>Essbare Pflege</p>
+  </div>
+  <div class="vorteil">
+    <i class="fas fa-seedling"></i>
+    <p>Natürliche Inhaltsstoffe</p>
+  </div>
+  <div class="vorteil">
+    <i class="fa-solid fa-earth-americas"></i>
+    <p>Umweltfreundliche Herstellung</p>
+  </div>
+</div>
+
+  <h2>Neu: Badezeit im Rhythmus der Natur</h2>
+  <div class="produktbilder">
+    <img src="bilder/bluetentraum.png" alt="Blütentraum">
+    <img src="bilder/tropicalcrunch.png" alt="Tropical Crunch">
+    <img src="bilder/berrylicious.png" alt="Berrylicious">
+    <img src="bilder/zimtzauber.png" alt="Zimtzauber">
+  </div>
+
+  <a class="button"onclick="openModal('modal-vorschau')">zum Probierpaket</a>
+
+</section>
+
+<!-- <section class="produkt-detail">
+  <img src="bilder/bluetentraum.png" alt="Blütentraum">
+  <div class="textblock">
+    <h3>Frühlingsedition<br><span>Blütentraum</span></h3>
+    <p>Badeflakes mit Honig & Wildblumen<br>Goldgelbe Wohlfühlmomente – ideal für sanfte Reinigung mit dem süßen Duft des Frühlings.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+  </div>
+</section>
+
+
+<section class="produkt-detail reverse">
+  <img src="bilder/tropicalcrunch.png" alt="Tropical Crunch">
+  <div class="textblock">
+    <h3>Sommeredition<br><span>Tropical Crunch</span></h3>
+    <p>Fruchtige Badebomben mit Ananas & Kokos<br>Feuchtigkeitsspendend & exotisch – ideal für trockene Haut.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+  </div>
+</section>
+
+<section class="produkt-detail">
+  <img src="bilder/berrylicious.png" alt="Berrylicious">
+  <div class="textblock">
+    <h3>Herbstedition<br><span>Berrylicious</span></h3>
+    <p>Fruchtige Beerenmischung mit Sandelholz<br>Hautberuhigend & fruchtig – ideal für gemütliche Herbsttage.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+  </div>
+</section>
+
+<section class="produkt-detail reverse">
+  <img src="bilder/zimtzauber.png" alt="Zimtzauber">
+  <div class="textblock">
+    <h3>Winteredition<br><span>Zimtzauber</span></h3>
+    <p>Pflegende Badekristalle mit Zimt & Vanille<br>Reichhaltige Pflege – ideal für beanspruchte Winterhaut.</p>
+    <a href="#" class="buttonred">Jetzt probieren</a>
+    <button id="tryBtn">Jetzt probieren</button> 
+  </div> -->
+
+<!-- Frühlingsedition – Text links -->
+<section class="produkt-banner fruehling ">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <h3  class="title-mobile">Frühlingsedition</h3>
+      <div class="bild-mit-schatten">
+      <img src="bilder/bluetentraum.png" alt="Wiesenwuff Packung" class="produkt-packung">
+    </div>
+      <div class="textblock">
+        <h3  class="desktop-only">Frühlingsedition Wiesenwuff</h3>
+          <span class="title-desktop">Knusprige Badeflakes mit Kokosöl & Zitronengras</span>
+          <span class="title-mobile">Kokosöl & Zitronengras</span>
+        <p>Frischer Start in den Frühling – mit natürlichem Schutz vor Plagegeistern.</p>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Sommeredition – Text rechts -->
+<section class="produkt-banner summer reverse ">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <h3  class="title-mobile">Sommeredition</h3>
+      <div class="bild-mit-schatten">
+        <img src="bilder/tropicalcrunch.png" alt="Grill & Chill Packung" class="produkt-packung">
+      </div>
+      <div class="textblock">
+        <h3  class="desktop-only">Sommeredition Grill & Chill</h3>
+        <span class="title-desktop">Saftige Badeleckerlis mit Süßkartoffel & Lavendel</span>
+        <span class="title-mobile">Süßkartoffel & Lavendel</span>
+          <p>Feuchtigkeitsspendend & beruhigend – BBQ-Pflege für echte Schnüffelnasen.</p>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Herbstedition – Text links -->
+<section class="produkt-banner herbst ">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <h3  class="title-mobile">Herbstedition</h3>
+      <div class="bild-mit-schatten">
+         <img src="bilder/berrylicious.png" alt="Waldbeute Packung" class="produkt-packung">
+      </div>
+      <div class="textblock">
+        <h3  class="desktop-only">Herbstedition Waldbeute</h3>
+        <span class="title-desktop">Leckere Waldhappen mit Marone & Karotte</span>
+        <span class="title-mobile">Marone & Karotte</span>
+         <p>Stärkend & pflegend – gepflegt im Herbstlaub toben.</p>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Winteredition – Text rechts -->
+<section class="produkt-banner winter reverse">
+  <div class="overlay-box">
+    <div class="overlay-content">
+      <h3  class="title-mobile">Winteredition</h3>
+      <div class="bild-mit-schatten">
+        <img src="bilder/zimtzauber.png" alt="Keks & Knuddel Packung" class="produkt-packung">
+      </div>
+      <div class="textblock">
+        <h3 class="desktop-only">Winteredition Keks & Knuddel</h3>
+        <span class="title-desktop">Pflegende Badeplätzchen mit Hafer, Vanille & Honig</span>
+        <span class="title-mobile">Zimt & Vanille</span>
+        <p>Reichhaltige Pflege – beruhigt beanspruchte Winterpfoten.</p>
+        <button class="buttonred" onclick="openModal('orderModal')">Jetzt probieren</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Pop-up -->
+<!-- <div id="popup" class="popup-hidden">
+  <div class="popup-content">
+    <span id="popupClose" class="popup-close">&times;</span>
+    <img src="quietscheente.svg" alt="Quietscheente" class="popup-duck" />
+    <h3>Bereit für dein entspannendes Müsli-Bad? 🍯🛁</h3>
+    <p>Gönn dir eine Auszeit – jetzt dein erstes Schaumbad-Experiment starten!</p>
+    <button class="popup-cta">Jetzt bestellen</button>
+  </div>
+</div> -->
+
+</section>
+
+
+
+</section>
+
+
+<section class="testimonial-slider">
+  <div class="testimonial-slide active">
+    <img src="bilder/KeksundKnuddelRezension.jpg" alt="Lea H.." class="testimonial-img">
+    <blockquote>
+      „Die Badeleckerlis sind wirklich super. Unser Balou ist jetzt eine richtige Wasserratte! “
+    </blockquote>
+    <cite>– Michaela H.</cite>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="bilder/WiesenwuffRezension.jpg" alt="Daniel K." class="testimonial-img">
+    <blockquote>
+      „Die Kräuterflakes sind ein echter Renner bei uns – egal ob als Badezusatz oder Leckerchen. Das Fell meiner Bella strahlt total. “
+    </blockquote>
+    <cite>–Sinan K.</cite>
+  </div>
+
+  <div class="testimonial-slide">
+    <img src="bilder/GrillChillRezension.jpg" alt="Victoria T." class="testimonial-img">
+    <blockquote>
+      „Unser Hund hasst baden eigentlich. Mit diesen Badezusätzen hat aber sogar er es genossen!! Ich werde es wieder kaufen!“
+    </blockquote>
+    <cite>– Lola S.</cite>
+  </div>
+
+  <!-- Navigation -->
+  <button class="testimonial-btn prev">‹</button>
+  <button class="testimonial-btn next">›</button>
+</section>
+
+
+
+
+<div class="duck-wrapper" onclick="makeBubbles()">
+  <img src="bilder/BelloggsHund.svg" alt="Quietscheente" class="duck-svg" />
+  <div class="bubble-container"></div>
+</div>
+
+
+
+
+
+<footer class="site-footer" onclick="makeBubbles()">
+  <div class="footer-column">
+    <nav>
+      <p>Unsere Produkte</p>
+      <p>Pflege</p>
+      <p>Wer wir sind</p>
+    </nav>
+  </div>
+  <div class="footer-column">
+    <nav>
+      <p>Impressum</p>
+      <p>Datenschutzerklärung</p>
+    </nav>
+  </div>
+  <div class="footer-column">
+    <nav>
+      <p>Seitenübersicht</p>
+      <p>Karriere</p>
+      <p>Cookie-Einstellungen</p>
+    </nav>
+  </div>
+</footer>
+
+<div id="modal-vorschau" class="custom-modal">
+  <span class="close-modal" onclick="closeModal('modal-vorschau')">&times;</span>
+   <p class="modal-caption">Diese sanfte Auszeit erwartet dich …</p>
+  <img src="bilder/vorschau.jpg" alt="Produktvorschau" class="modal-image desktop-only">
+  <img src="bilder/vorschaumobile.jpg" alt="Produktvorschau" class="modal-image mobile-only">
+</div>
+
+
+<!-- Bestellformular-Pop-up -->
+<div class="custom-modal" id="orderModal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal('orderModal')">&times;</span>
+    <h2 class="modal-caption">Bestellformular</h2>
+    <form id="orderForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="number" id="plz" placeholder="Postleitzahl" required>
+      <input type="text" id="address" placeholder="Adresse" required>
+      <input type="email" id="email" placeholder="E-Mail" required>
+      <button type="submit">Bestellen</button>
+    </form>
+    <p id="formMessage" class="form-message"></p>
+  </div>
+</div>
+
+
+
+<script src="slider.js"></script>
+</body>
+</html>
