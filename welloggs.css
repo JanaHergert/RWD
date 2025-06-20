@@ -974,7 +974,6 @@ button{
 .produkt-banner.winter,
 .produkt-banner.fruehling,
 .produkt-banner.summer {
-  background-image: none;
   background-color: white;
   padding-top: 2rem;
   padding-bottom: 10em;
@@ -985,20 +984,28 @@ img.produkt-packung {
   max-width: 10rem;
 }
 
-.produkt-banner.fruehling {
+.produkt-banner.fruehling, .produkt-banner.fruehling.baby, .produkt-banner.fruehling.doggo {
   background-color: #78A14C; 
+  background-image: none;
+
 }
 
-.produkt-banner.summer {
+.produkt-banner.summer, .produkt-banner.summer.baby, .produkt-banner.summer.doggo {
   background-color: #D4971D;
+  background-image: none;
+
 }
 
-.produkt-banner.herbst {
+.produkt-banner.herbst, .produkt-banner.herbst.baby, .produkt-banner.herbst.doggo {
   background-color: #920c0a;
+  background-image: none;
+
 }
 
-.produkt-banner.winter {
+.produkt-banner.winter, .produkt-banner.winter.baby, .produkt-banner.winter.doggo {
   background-color: #608187;
+  background-image: none;
+
 }
 
   .title-desktop {
