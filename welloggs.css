@@ -896,7 +896,7 @@ body {
 @media (max-width: 768px) {
 
   .hero-static img {
-    object-position: 70% center;
+    object-position: 70% 65%;
   }
 
     .vorteil i {
@@ -1116,7 +1116,7 @@ img.produkt-packung {
 @media (min-width: 769px) {
 
  .hero-static img {
-    object-position: 75% center;
+    object-position: 75% 65%;
   }
 
     .produkt-banner {
@@ -1230,6 +1230,7 @@ img.produkt-packung {
 
 
 @media (min-width: 1024px) {
+
 
   .produktbilder img {
     height: 20rem;
